@@ -336,6 +336,9 @@ export default {
       let mem;
       const elements = [];
 
+      console.log('members:', members);
+      console.log('element:', element);
+
       members.forEach((m) => {
         if (element === 'timeDimensions') {
           mem = this[`available${name}`].find(x => x.name === m.dimension);
